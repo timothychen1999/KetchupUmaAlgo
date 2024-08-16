@@ -4,8 +4,8 @@
 #include<vector>
 #include<iostream>
 #include"GlobalEnum.h"
-#include"Facility.h"
-#include"TurnData.h"
+#include "Facility.h"
+#include "TurnData.h"
 
 using namespace std;
 

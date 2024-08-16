@@ -1,5 +1,5 @@
-#include"VenusScenerioSimulator.h"
-#include"TurnData.h"
+#include "VenusScenerioSimulator.h"
+#include "TurnData.h"
 using namespace std;
 
 VenusScenerioSimulator::VenusScenerioSimulator()
