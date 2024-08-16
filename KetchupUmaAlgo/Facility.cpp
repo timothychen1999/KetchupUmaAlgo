@@ -5,6 +5,13 @@ Facility::Facility(FacilityType facilityType)
 {
 }
 
+Facility::Facility(FacilityType facilityType, vector<int> trainLevelCount)
+	: _level(1), _maxLevel(5), _facilityType(facilityType)
+{
+	_levelScore = trainLevelCount[static_cast<int>(facilityType)];
+	_updateLevel();
+}
+
 int Facility::GetLevel()
 {
 	return _level;
@@ -41,5 +48,6 @@ void Facility::GetPropertySpirit()
 
 void Facility::_updateLevel()
 {
-	_level = _level <= _maxLevel ? _levelScore / 12 + 1 : 5;
+	_level = _levelScore / 12 + 1 ;
+	_level = _level <= _maxLevel ? _level : _maxLevel;
 }

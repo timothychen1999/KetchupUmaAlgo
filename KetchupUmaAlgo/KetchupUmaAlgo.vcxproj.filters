@@ -33,6 +33,9 @@
     <ClCompile Include="SupportCard.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="FacilitySystem.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -54,6 +57,9 @@
       <Filter>來源檔案</Filter>
     </ClInclude>
     <ClInclude Include="SupportCard.h">
+      <Filter>來源檔案</Filter>
+    </ClInclude>
+    <ClInclude Include="FacilitySystem.h">
       <Filter>來源檔案</Filter>
     </ClInclude>
   </ItemGroup>

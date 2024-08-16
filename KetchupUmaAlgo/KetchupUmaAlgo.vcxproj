@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Facility.cpp" />
+    <ClCompile Include="FacilitySystem.cpp" />
     <ClCompile Include="JsonLoader.cpp" />
     <ClCompile Include="KetchupUmaAlgo.cpp" />
     <ClCompile Include="SupportCard.cpp" />
@@ -151,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Facility.h" />
+    <ClInclude Include="FacilitySystem.h" />
     <ClInclude Include="GlobalEnum.h" />
     <ClInclude Include="JsonLoader.h" />
     <ClInclude Include="SupportCard.h" />

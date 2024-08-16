@@ -1,9 +1,9 @@
 ﻿#include <iostream>
-#include "TurnData.h"
 #include "JsonLoader.h"
+#include "FacilitySystem.h"
 using namespace std;
 
-int main()
+void TestCard()
 {
 	SupportCard card0 = GetSupportCard(10004, 4);
 	card0.PrintInfo();
@@ -17,3 +17,15 @@ int main()
 	card4.PrintInfo();
 }
 
+void TestFacility()
+{
+	TurnData thisTurn = GetThisTurn();
+	FacilitySystem testSystem = FacilitySystem(thisTurn);
+	testSystem.PrintInfo();
+}
+
+int main()
+{
+	//TestCard();
+	TestFacility();
+}

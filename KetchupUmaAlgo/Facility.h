@@ -4,11 +4,13 @@
 #include <vector>
 #include <string>
 #include "GlobalEnum.h"
+using namespace std;
 
 class Facility
 {
 public:
     Facility(FacilityType facilityType);
+    Facility(FacilityType facilityType, vector<int> trainLevelCount);
     int GetLevel();
     FacilityType GetFacilityType();
     void Click();
