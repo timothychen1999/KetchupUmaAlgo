@@ -143,6 +143,9 @@
     <ClCompile Include="FacilitySystem.cpp" />
     <ClCompile Include="JsonLoader.cpp" />
     <ClCompile Include="KetchupUmaAlgo.cpp" />
+    <ClCompile Include="SpiritTower.cpp" />
+    <ClCompile Include="SpiritTowerNode.cpp" />
+    <ClCompile Include="SpiritTowerSystem.cpp" />
     <ClCompile Include="SupportCard.cpp" />
     <ClCompile Include="TurnData.cpp" />
     <ClCompile Include="VenusScenerioSimulator.cpp" />
@@ -155,6 +158,9 @@
     <ClInclude Include="FacilitySystem.h" />
     <ClInclude Include="GlobalEnum.h" />
     <ClInclude Include="JsonLoader.h" />
+    <ClInclude Include="SpiritTower.h" />
+    <ClInclude Include="SpiritTowerNode.h" />
+    <ClInclude Include="SpiritTowerSystem.h" />
     <ClInclude Include="SupportCard.h" />
     <ClInclude Include="TurnData.h" />
     <ClInclude Include="VenusScenerioSimulator.h" />

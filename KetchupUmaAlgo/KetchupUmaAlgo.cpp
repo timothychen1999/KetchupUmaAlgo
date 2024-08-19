@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include "JsonLoader.h"
 #include "FacilitySystem.h"
+#include "SpiritTowerSystem.h"
 using namespace std;
 
 void TestCard()
@@ -24,8 +25,24 @@ void TestFacility()
 	testSystem.PrintInfo();
 }
 
+void TestSpiritTower()
+{
+	SpiritTowerSystem* tower = new SpiritTowerSystem();
+	tower->AddSpirit(SpiritType::Speed, SpiritColor::Red);
+	tower->AddSpirit(SpiritType::Stamina, SpiritColor::Blue);
+	tower->AddSpirit(SpiritType::SkillPt, SpiritColor::Yellow);
+	tower->AddSpirit(SpiritType::Power, SpiritColor::Red);
+	tower->AddSpirit(SpiritType::Power, SpiritColor::Yellow);
+	tower->AddSpirit(SpiritType::Speed, SpiritColor::Red);
+	tower->AddSpirit(SpiritType::Will, SpiritColor::Yellow);
+	tower->AddSpirit(SpiritType::SkillPt, SpiritColor::Blue);
+	tower->AddSpirit(SpiritType::Speed, SpiritColor::Red);
+	tower->PrintInfo();
+}
+
 int main()
 {
 	//TestCard();
-	TestFacility();
+	//TestFacility();
+	TestSpiritTower();
 }

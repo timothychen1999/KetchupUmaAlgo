@@ -18,4 +18,31 @@ enum class TrainType
     Will,
     Int
 };
+
+enum class SpiritType
+{
+    Speed,
+    Stamina,
+    Power,
+    Will,
+    Int,
+    SkillPt,
+    None
+};
+
+enum class SpiritColor
+{
+    Red,
+    Blue,
+    Yellow,
+    None
+};
+
+enum class VenusColor
+{
+    Red,
+    Blue,
+    Yellow,
+    None
+};
 #endif

@@ -20,7 +20,6 @@ private:
     int cardId;
     string cardName;
     TrainType cardType;
-
     int YouQing;
     int GanJing;
     int xunLian;
@@ -29,6 +28,8 @@ private:
     vector<int> PropertyBonus;
     vector<int> InitialBonus;
     int wizVitalBonus;
+
+    void handleUniquePassive();
 };
 
 #endif // SUPPORTCARD_H

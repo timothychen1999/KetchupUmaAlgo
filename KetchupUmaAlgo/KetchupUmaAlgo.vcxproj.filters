@@ -36,31 +36,49 @@
     <ClCompile Include="FacilitySystem.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="SpiritTowerSystem.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiritTower.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="SpiritTowerNode.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TurnData.h">
-      <Filter>來源檔案</Filter>
-    </ClInclude>
-    <ClInclude Include="JsonLoader.h">
-      <Filter>來源檔案</Filter>
-    </ClInclude>
     <ClInclude Include="VenusScenerioSimulator.h">
-      <Filter>來源檔案</Filter>
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="TurnData.h">
+      <Filter>標頭檔</Filter>
     </ClInclude>
     <ClInclude Include="Facility.h">
-      <Filter>來源檔案</Filter>
-    </ClInclude>
-    <ClInclude Include="GlobalEnum.h">
-      <Filter>來源檔案</Filter>
-    </ClInclude>
-    <ClInclude Include="SupportCard.h">
-      <Filter>來源檔案</Filter>
+      <Filter>標頭檔</Filter>
     </ClInclude>
     <ClInclude Include="FacilitySystem.h">
-      <Filter>來源檔案</Filter>
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalEnum.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonLoader.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="SupportCard.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiritTowerSystem.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiritTower.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiritTowerNode.h">
+      <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

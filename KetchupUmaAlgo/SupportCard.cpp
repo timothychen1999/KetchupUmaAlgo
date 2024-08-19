@@ -59,3 +59,7 @@ void SupportCard::PrintInfo()
     cout << endl;
 }
 
+void SupportCard::handleUniquePassive()
+{
+}
+
