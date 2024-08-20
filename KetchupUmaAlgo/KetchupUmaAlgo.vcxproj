@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DeckSystem.cpp" />
     <ClCompile Include="Facility.cpp" />
     <ClCompile Include="FacilitySystem.cpp" />
     <ClCompile Include="JsonLoader.cpp" />
@@ -154,6 +155,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DeckSystem.h" />
     <ClInclude Include="Facility.h" />
     <ClInclude Include="FacilitySystem.h" />
     <ClInclude Include="GlobalEnum.h" />

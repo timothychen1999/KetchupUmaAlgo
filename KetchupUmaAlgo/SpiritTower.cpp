@@ -32,22 +32,25 @@ void SpiritTower::Insert(SpiritType type, SpiritColor color)
 			return;
 		}
 	}
-	cout << "คwบก";
 }
 
 void SpiritTower::Clear()
 {
 	for (auto& layer : spiritTower)
 	{
-		for (auto* node : layer)
+		for (auto*& node : layer)
 		{
 			delete node;
+			node = nullptr;
 		}
-		layer.clear();
 	}
-	spiritTower.clear();
-	colorSum.clear();
+
+	for (auto& colorPair : colorSum)
+	{
+		colorPair.second = 0;
+	}
 }
+
 
 void SpiritTower::GenerateTopNode()
 {

@@ -3,6 +3,7 @@
 
 using namespace std;
 #include "TurnData.h"
+#include "FacilitySystem.h"
 
 class VenusScenerioSimulator
 {

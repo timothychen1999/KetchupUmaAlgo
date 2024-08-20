@@ -34,6 +34,8 @@ public:
 	int motivation;
 	// 技能卡ID
 	vector<int> cardId;
+	// 支援卡突破
+	vector<int> cardLimitBreak;
 	// 技能卡羈絆
 	vector<int> cardJiBan;
 	// 訓練設施分數(每12分升一等)

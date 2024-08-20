@@ -3,7 +3,6 @@
 using namespace std;
 
 VenusScenerioSimulator::VenusScenerioSimulator()
-	: thisTurn()
 {
 
 }

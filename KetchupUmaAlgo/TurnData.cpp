@@ -28,6 +28,12 @@ TurnData::TurnData(const json& j)
 	skillPt = j.value("skillPt", 0);
 	motivation = j.value("motivation", 0);
 	cardId = j.value("cardId", vector<int>());
+	cardLimitBreak.resize(6);
+	for (int i = 0; i < 6; i++)
+	{
+		cardLimitBreak[i] = cardId[i] / 100000;
+		cardId[i] = cardId[i] % 100000;
+	}
 	cardJiBan = j.value("cardJiBan", vector<int>());
 	trainLevelCount = j.value("trainLevelCount", vector<int>());
 	zhongMaBlueCount = j.value("zhongMaBlueCount", vector<int>());

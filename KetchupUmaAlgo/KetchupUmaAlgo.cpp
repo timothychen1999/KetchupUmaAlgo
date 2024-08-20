@@ -1,21 +1,14 @@
 ﻿#include <iostream>
-#include "JsonLoader.h"
 #include "FacilitySystem.h"
 #include "SpiritTowerSystem.h"
+#include "DeckSystem.h"
 using namespace std;
 
-void TestCard()
+void TestDeck()
 {
-	SupportCard card0 = GetSupportCard(10004, 4);
-	card0.PrintInfo();
-	SupportCard card1 = GetSupportCard(10055, 4);
-	card1.PrintInfo();
-	SupportCard card2 = GetSupportCard(30016, 4);
-	card2.PrintInfo();
-	SupportCard card3 = GetSupportCard(30134, 4);
-	card3.PrintInfo();
-	SupportCard card4 = GetSupportCard(30010, 4);
-	card4.PrintInfo();
+	TurnData thisTurn = GetThisTurn();
+	DeckSystem* deck = new DeckSystem(thisTurn);
+	deck->PrintInfo();
 }
 
 void TestFacility()
@@ -38,11 +31,14 @@ void TestSpiritTower()
 	tower->AddSpirit(SpiritType::SkillPt, SpiritColor::Blue);
 	tower->AddSpirit(SpiritType::Speed, SpiritColor::Red);
 	tower->PrintInfo();
+
+	tower->Activate();
+	tower->PrintInfo();
 }
 
 int main()
 {
-	//TestCard();
+	TestDeck();
 	//TestFacility();
-	TestSpiritTower();
+	//TestSpiritTower();
 }
