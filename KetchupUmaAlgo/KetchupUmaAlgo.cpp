@@ -2,6 +2,7 @@
 #include "FacilitySystem.h"
 #include "SpiritTowerSystem.h"
 #include "DeckSystem.h"
+#include "VenusScenerioSimulator.h"
 using namespace std;
 
 void TestDeck()
@@ -36,9 +37,17 @@ void TestSpiritTower()
 	tower->PrintInfo();
 }
 
+void TestScenerio()
+{
+	VenusScenerioSimulator* simulator = new VenusScenerioSimulator();
+	simulator->PrintInfo();
+}
+
 int main()
 {
-	TestDeck();
+	system("chcp 65001");
+	//TestDeck();
 	//TestFacility();
 	//TestSpiritTower();
+	TestScenerio();
 }

@@ -15,21 +15,21 @@ public:
     SupportCard();
     SupportCard(const json& j, int limitBreak);
     void PrintInfo();
-
-private:
     int cardId;
+    int cardLimitBreak;
     string cardName;
     TrainType cardType;
-    int YouQing;
+    double YouQing;
     int GanJing;
     int xunLian;
     int InitialJiBan;
-    int DeYiLv;
+    double DeYiLv;
     vector<int> PropertyBonus;
     vector<int> InitialBonus;
     int wizVitalBonus;
-
-    void handleUniquePassive();
+    int saiHou;
+    int hintLevel;
+    int hintProbIncrease;
 };
 
-#endif // SUPPORTCARD_H
+#endif

@@ -2,6 +2,7 @@
 #define DECKSYSTEM_H
 
 #include <vector>
+#include <iostream>
 #include "JsonLoader.h"
 #include "SupportCard.h"
 #include "TurnData.h"
@@ -13,8 +14,10 @@ public:
     DeckSystem();
     DeckSystem(TurnData turnData);
     void PrintInfo();
+
 private:
-    vector<SupportCard> deck;
+    vector<SupportCard> _deck;
+    int _raceBonus;
 };
 
 #endif

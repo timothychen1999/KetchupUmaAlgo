@@ -27,7 +27,7 @@ void FacilitySystem::PrintInfo()
 {
 	for (int i = 0;i < 5 ;i++)
 	{
-		cout << "設施" << i << "的等級為" << _facilityGroup[i].GetLevel() << endl;
+		cout << u8"設施" << i << u8"的等級為" << _facilityGroup[i].GetLevel() << endl;
 	}
 }
 

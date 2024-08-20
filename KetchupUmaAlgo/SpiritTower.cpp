@@ -122,10 +122,10 @@ void SpiritTower::PrintInfo()
 		int space = maxWidth / (numNodes + 1);  // 計算每個節點之間的間距
 
 		// 打印層標題
-		cout << "層 " << i + 1 << ":" << endl;
+		cout << u8"層 " << i + 1 << ":" << endl;
 
 		// 顯示類型
-		cout << "類型: ";
+		cout << u8"類型: ";
 		for (int j = 0; j < numNodes; ++j)
 		{
 			if (spiritTower[i][j])
@@ -134,7 +134,7 @@ void SpiritTower::PrintInfo()
 			}
 			else
 			{
-				cout << "空";
+				cout << u8"空";
 			}
 			if (j < numNodes - 1)
 			{
@@ -148,7 +148,7 @@ void SpiritTower::PrintInfo()
 		cout << endl;
 
 		// 顯示顏色
-		cout << "顏色: ";
+		cout << u8"顏色: ";
 		for (int j = 0; j < numNodes; ++j)
 		{
 			if (spiritTower[i][j])
@@ -157,7 +157,7 @@ void SpiritTower::PrintInfo()
 			}
 			else
 			{
-				cout << "空";
+				cout << u8"空";
 			}
 			if (j < numNodes - 1)
 			{
@@ -171,7 +171,7 @@ void SpiritTower::PrintInfo()
 		cout << endl;
 
 		// 顯示屬性量
-		cout << "屬性: ";
+		cout << u8"屬性: ";
 		for (int j = 0; j < numNodes; ++j)
 		{
 			if (spiritTower[i][j])
@@ -180,7 +180,7 @@ void SpiritTower::PrintInfo()
 			}
 			else
 			{
-				cout << "空";
+				cout << u8"空";
 			}
 			if (j < numNodes - 1)
 			{

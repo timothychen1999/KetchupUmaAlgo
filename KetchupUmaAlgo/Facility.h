@@ -23,6 +23,9 @@ public:
 private:
     int _level;
     int _maxLevel;
+    SpiritColor _spiritColor;
+    SpiritType _spiritType;
+    int _spiritCount;
     float _levelScore;
     FacilityType _facilityType;
     void _updateLevel();
