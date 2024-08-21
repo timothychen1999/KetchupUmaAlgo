@@ -48,6 +48,9 @@
     <ClCompile Include="DeckSystem.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="GlobalVariable.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -84,6 +87,9 @@
       <Filter>標頭檔</Filter>
     </ClInclude>
     <ClInclude Include="DeckSystem.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalVariable.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>

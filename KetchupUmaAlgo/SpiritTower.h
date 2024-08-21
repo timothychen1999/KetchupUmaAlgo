@@ -8,6 +8,7 @@
 #include <random>
 #include <unordered_map>
 #include <string>
+#include "TurnData.h"
 using namespace std;
 
 class SpiritTower
@@ -15,6 +16,7 @@ class SpiritTower
 public:
     SpiritTower();
     void Insert(SpiritType type, SpiritColor color);
+    void SetNode(SpiritType type, SpiritColor color, int layer, int position);
     void Clear();
     void PrintInfo();
 

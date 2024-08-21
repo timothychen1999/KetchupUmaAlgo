@@ -3,6 +3,7 @@
 using namespace std;
 
 VenusScenerioSimulator::VenusScenerioSimulator()
+	:turn(1)
 {
 	facilitySystem = new FacilitySystem();
 	deckSystem = new DeckSystem();
@@ -10,9 +11,11 @@ VenusScenerioSimulator::VenusScenerioSimulator()
 }
 
 VenusScenerioSimulator::VenusScenerioSimulator(TurnData thisTurn)
-	: thisTurn(thisTurn)
+	:turn(1), thisTurn(thisTurn)
 {
-
+	facilitySystem = new FacilitySystem(thisTurn);
+	deckSystem = new DeckSystem(thisTurn);
+	spiritTowerSystem = new SpiritTowerSystem(thisTurn);
 }
 
 int VenusScenerioSimulator::SimulateFromThisTurn()

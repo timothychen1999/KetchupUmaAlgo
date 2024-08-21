@@ -39,7 +39,8 @@ void TestSpiritTower()
 
 void TestScenerio()
 {
-	VenusScenerioSimulator* simulator = new VenusScenerioSimulator();
+	TurnData thisTurn = GetThisTurn();
+	VenusScenerioSimulator* simulator = new VenusScenerioSimulator(thisTurn);
 	simulator->PrintInfo();
 }
 

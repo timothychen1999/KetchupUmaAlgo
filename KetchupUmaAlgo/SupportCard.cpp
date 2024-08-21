@@ -4,7 +4,7 @@
 SupportCard::SupportCard()
     : cardId(0), cardName(""), cardType(static_cast<TrainType>(1)),
     YouQing(0), GanJing(0), xunLian(0), InitialJiBan(0), DeYiLv(0),
-    PropertyBonus(6, 0), InitialBonus(6, 0), wizVitalBonus(0)
+    PropertyBonus(6, 0), InitialBonus(6, 0), wizVitalBonus(0), _isShining(false)
 {
 }
 
@@ -36,6 +36,7 @@ SupportCard::SupportCard(const json& cardData, int limitBreak)
         cerr << "Invalid limitBreak index: " << limitBreak << endl;
     }
 
+    _isShining = false;
 }
 
 void SupportCard::PrintInfo()
@@ -65,5 +66,10 @@ void SupportCard::PrintInfo()
     cout << u8"靈感等級: " << hintLevel << endl;
     cout << u8"靈感機率: " << hintProbIncrease << endl;
     cout << endl;
+}
+
+bool SupportCard::IsShining()
+{
+    return _isShining;
 }
 

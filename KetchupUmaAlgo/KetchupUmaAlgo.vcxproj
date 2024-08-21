@@ -142,6 +142,7 @@
     <ClCompile Include="DeckSystem.cpp" />
     <ClCompile Include="Facility.cpp" />
     <ClCompile Include="FacilitySystem.cpp" />
+    <ClCompile Include="GlobalVariable.cpp" />
     <ClCompile Include="JsonLoader.cpp" />
     <ClCompile Include="KetchupUmaAlgo.cpp" />
     <ClCompile Include="SpiritTower.cpp" />
@@ -159,6 +160,7 @@
     <ClInclude Include="Facility.h" />
     <ClInclude Include="FacilitySystem.h" />
     <ClInclude Include="GlobalEnum.h" />
+    <ClInclude Include="GlobalVariable.h" />
     <ClInclude Include="JsonLoader.h" />
     <ClInclude Include="SpiritTower.h" />
     <ClInclude Include="SpiritTowerNode.h" />

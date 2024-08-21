@@ -1,7 +1,6 @@
 #include "SpiritTower.h"
 #include <iostream>
 #include <algorithm>
-#include <cstdlib>
 
 using namespace std;
 
@@ -34,6 +33,17 @@ void SpiritTower::Insert(SpiritType type, SpiritColor color)
 	}
 }
 
+void SpiritTower::SetNode(SpiritType type, SpiritColor color, int layer, int position)
+{
+	spiritTower[layer][position] = new SpiritTowerNode(type, color);
+	if (layer == 2 || layer == 1)
+	{
+		spiritTower[layer][position]->left = spiritTower[layer + 1][position * 2];
+		spiritTower[layer][position]->right = spiritTower[layer + 1][position * 2 + 1];
+		spiritTower[layer][position]->Init();
+	}
+}
+
 void SpiritTower::Clear()
 {
 	for (auto& layer : spiritTower)
@@ -55,9 +65,9 @@ void SpiritTower::Clear()
 void SpiritTower::GenerateTopNode()
 {
 	// 生成第二層節點
-	for (int i = 0; i < 4; i ++)
+	for (int i = 0; i < 4; i++)
 	{
-		if (spiritTower[3][i*2] && spiritTower[3][i*2 + 1] && !spiritTower[2][i])
+		if (spiritTower[3][i * 2] && spiritTower[3][i * 2 + 1] && !spiritTower[2][i])
 		{
 			spiritTower[2][i] = new SpiritTowerNode();
 			spiritTower[2][i]->left = spiritTower[3][i * 2];
@@ -106,7 +116,7 @@ SpiritColor SpiritTower::GetWisdomColor()
 	}
 	else
 	{
-		SpiritColor result = rand() % 100 < 50 ? leftColor :rightColor;
+		SpiritColor result = rand() % 100 < 50 ? leftColor : rightColor;
 		return result;
 	}
 }
@@ -130,7 +140,7 @@ void SpiritTower::PrintInfo()
 		{
 			if (spiritTower[i][j])
 			{
-				cout << static_cast<int>(spiritTower[i][j]->spiritType);
+				cout << spiritTower[i][j]->spiritType;
 			}
 			else
 			{
@@ -153,7 +163,7 @@ void SpiritTower::PrintInfo()
 		{
 			if (spiritTower[i][j])
 			{
-				cout << static_cast<int>(spiritTower[i][j]->spiritColor);
+				cout << spiritTower[i][j]->spiritColor;
 			}
 			else
 			{

@@ -46,6 +46,11 @@ void Facility::GetPropertySpirit()
 	_updateLevel();
 }
 
+tuple<SpiritColor, SpiritType, int> Facility::GetSpiritData()
+{
+	return _spiritData;
+}
+
 void Facility::_updateLevel()
 {
 	_level = _levelScore / 12 + 1 ;

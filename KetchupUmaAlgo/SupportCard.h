@@ -30,6 +30,11 @@ public:
     int saiHou;
     int hintLevel;
     int hintProbIncrease;
+
+    bool IsShining();
+
+private:
+    bool _isShining;
 };
 
 #endif
